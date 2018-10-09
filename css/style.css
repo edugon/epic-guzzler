@@ -1,0 +1,96 @@
+/* Eduardo González Real */
+body {
+	width: 99%;
+	text-align: center;
+	background-color: #6296E4;
+}
+h2 {
+	color: #0056D8;
+}
+h2 span img {
+	width: 25px;
+	height: 25px;
+}
+#container {
+	margin-bottom: 5px;
+	margin-left: 37%;
+}
+#forms-div {
+	/*background-image: url("../img/foodWallpaper.jpg");*/
+	background-color: #ffffff;
+	border: 3px solid #0066FF;
+	width: 372px;
+	height: 372px;
+	text-align: center;
+	font-size: 1em;
+}
+#sign-in-form {
+	visibility: hidden;
+}
+#login-form label, #sign-in-form label {
+	text-decoration: underline;
+}
+#login-button, #sign-button {
+	width: 30%;
+	margin: 3px;
+}
+#user-input, #password-input, #user-sign-input, #password-sign-input, #conf-password-sign-input {
+	width: 90%;
+	margin: 3px;
+}
+#table {
+	border: 3px solid #0066FF;
+	background-color: #ffffff;
+	/*background-image: url("../img/foodWallpaper.jpg");*/
+}
+.cell {
+	/*border: 1px solid black;*/
+	width: 4.5em;
+	height: 4.5em;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+#player-img {
+	width: 64px;
+	height: 64px;
+	margin: 0px;
+	padding: 0px;
+}
+.food-img {
+	width: 45px;
+	height: 45px;
+}
+#user-info {
+	margin-top: 5px;
+}
+#lifes-div {
+	display: none;
+	margin-top: 5px;
+}
+#faq-div {
+	margin-top: 8px;
+}
+.faq-img {
+	width: 20px;
+	height: 20px;
+}
+.life-img {
+	width: 20px;
+	height: 20px;
+}
+#faq-button {
+	margin-top: 8px;
+}
+#restart-button {
+	display: none;
+}
+#score-div {
+	/*background-image: url("../img/foodWallpaper.jpg");*/
+	background-color: #ffffff;
+	border: 3px solid #0066FF;
+	width: 372px;
+	height: 372px;
+	text-align: center;
+	font-size: 1.3em;
+}

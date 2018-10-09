@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Epic Guzzler</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body onload="initialize()">
+		<h2><span><img src="img/food5.jpg"/></span> EPIC GUZZLER! <span><img src="img/food2.jpg"/></span></h2>
+		<div id="container">
+			<div id="forms-div">
+				<form id="login-form">
+					<br/><label><b>User:</b></label><br/>
+					<input type="text" id="user-input"></input>
+					<label><b>Password:</b></label><br/>
+					<input type="password" id="password-input"></input><br/>
+					<input type="button" id="login-button" value="Start!"></input><br/>
+					<a id="sing-in-link" href=""><b>New into this game? Sign in</b></a>
+				</form>
+				<form id="sign-in-form">
+					<label>User:</label><br/>
+					<input type="text" id="user-sign-input"></input>
+					<label>Password:</label><br/>
+					<input type="password" id="password-sign-input"></input><br/>
+					<label>Repeat password:</label><br/>
+					<input type="password" id="conf-password-sign-input"></input><br/>
+					<input type="button" id="sign-button" value="Sign in"></input>
+				</form>
+			</div>
+		</div>
+		<div id="lifes-div"></div>
+		<br/><span id="user-info">Welcome!</span>
+		<br/><button id="faq-button">FAQ</button>
+		 <button id="restart-button">Restart</button>
+		<div id="faq-div"></div>
+		<script src="js/utils.js"></script>
+		<script src="js/game.js"></script>
+		<script src="js/userData.js"></script>
+		<script src="js/userScore.js"></script>
+	</body>
+</html>
