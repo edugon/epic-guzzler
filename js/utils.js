@@ -1,4 +1,3 @@
-// Eduardo Gonzalez Real
 function initImage(type) {
 	var img = document.createElement("img");
 	switch(type) {
@@ -47,6 +46,7 @@ function initImage(type) {
 	}
 	return img;
 }
+
 function initFaqInfo() {
 	var info = "<b>Left and right arrow</b> to move. <br/><u><b>Food points:</b></u> <br/>"
 	+ "<img class=\"faq-img\" src=\"img/food6.jpg\"></img> +10pts<br/>"
