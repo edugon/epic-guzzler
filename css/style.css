@@ -41,6 +41,7 @@ h2 span img {
 	border: 3px solid #0066FF;
 	background-color: #ffffff;
 	/*background-image: url("../img/foodWallpaper.jpg");*/
+	margin: auto;
 }
 .cell {
 	/*border: 1px solid black;*/
