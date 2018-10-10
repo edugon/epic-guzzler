@@ -12,7 +12,6 @@ h2 span img {
 }
 #container {
 	margin-bottom: 5px;
-	margin-left: 37%;
 }
 #forms-div {
 	/*background-image: url("../img/foodWallpaper.jpg");*/
@@ -22,6 +21,7 @@ h2 span img {
 	height: 372px;
 	text-align: center;
 	font-size: 1em;
+	margin: auto;
 }
 #sign-in-form {
 	visibility: hidden;
