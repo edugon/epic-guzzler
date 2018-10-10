@@ -1,6 +1,6 @@
 # Epic Guzzler
 
-![](img/screens.png)
+![](https://gitlab.com/EduGon/epic-guzzler/raw/master/img/screens.PNG)
 
 Use keyboard (left and right arrows) to move.
 
