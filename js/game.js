@@ -1,4 +1,3 @@
-// Eduardo González Real
 var userName;
 var levelTimeOut;
 var generateTimeOut;
