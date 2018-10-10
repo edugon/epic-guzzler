@@ -1,6 +1,6 @@
-// Eduardo González Real
 var score = 0;
 var lifes = 3;
+
 function initUserScore(userInput) {
 	document.getElementById("user-info").innerHTML = "<b>" + userInput + ":</b> " + score + "pts";
 	document.getElementById("lifes-div").innerHTML = "";
@@ -17,6 +17,7 @@ function initUserScore(userInput) {
 			document.getElementById("lifes-div").appendChild(image);
 		}
 }
+
 function incrementScore(itemPoints, itemCell) {
 	var points = parseInt(itemPoints);
 	var item = itemCell;
@@ -49,6 +50,7 @@ function incrementScore(itemPoints, itemCell) {
 	}
 	initUserScore(userName);
 }
+
 function decrementLifes(lifesLess, itemCell) {
 	var item = itemCell;
 	item.removeChild(item.childNodes[0]);
@@ -56,6 +58,7 @@ function decrementLifes(lifesLess, itemCell) {
 	lifes-=lifesLess;
 	initUserScore(userName);
 }
+
 function incrementLifes(itemCell) {
 	var item = itemCell;
 	item.removeChild(item.childNodes[0]);
@@ -63,6 +66,7 @@ function incrementLifes(itemCell) {
 	lifes+=1;
 	initUserScore(userName);
 }
+
 function resetLifes() {
 	lifes = 3;
 	initUserScore(userName);
