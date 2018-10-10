@@ -1,4 +1,7 @@
 # Epic Guzzler
+
+![](img/screens.png)
+
 Use keyboard (left and right arrows) to move.
 
 ## Rules
