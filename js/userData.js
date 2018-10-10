@@ -1,7 +1,7 @@
-// Eduardo González Real
 function initialize() {
 	addListeners();
 }
+
 function addListeners() {
 	var loginButton = document.getElementById("login-button");
 	var signInLink = document.getElementById("sing-in-link");
@@ -32,6 +32,7 @@ function addListeners() {
 			initFaqInfo();
 	});
 }
+
 function confirmLogin(userInput, passwordInput) {
 	if(userInput == "" || passwordInput == "")
 		alert("There are empty fields");
@@ -64,6 +65,7 @@ function confirmLogin(userInput, passwordInput) {
 			alert("User doesn't exist");
 	}
 }
+
 function confirmSignIn(user, password, confirmPassword) {
 	if(user == "" || password == "" || confirmPassword == "")
 		alert("There are empty fields");
@@ -79,6 +81,7 @@ function confirmSignIn(user, password, confirmPassword) {
 		}
 	}
 }
+
 function signInData(userInput, passwordInput) {
 	if(typeof(Storage) !== "undefined") {
 		var userData = {'user': {'name': userInput.toLowerCase(), 'password': passwordInput, 'score': 0}};
@@ -113,6 +116,7 @@ function signInData(userInput, passwordInput) {
 	    alert("Sorry! No Web Storage support...")
 	}
 }
+
 function updateData(user, score) {
 	var userList = [];
 	var dataBack = JSON.parse(localStorage.getItem("users"));
