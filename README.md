@@ -2,14 +2,14 @@
 
 ![](https://gitlab.com/EduGon/epic-guzzler/raw/master/img/screens.PNG)
 
-Use keyboard (left and right arrows) to move.
-
-## Rules
+## Description
+- Use keyboard (left and right arrows) to move.
 - Eat food to increase score.
-- Difficulty  will aument during time (greater number of erroneous items).
-- Eventually hearts will fall, get them to increase lives.
+- The game will be more difficult during time.
+- Eventually there will fall hearts, eat them to increase lives.
 - The game ends when the player runs out of lives.
-> **Check  FAQ** for detailed info.
+- Your credentials will be stored using browser Local Storage.
+> **Check** in-game **FAQ** for more info.
 
 ## Run the game
 Just execute `index.html` to run the game.
