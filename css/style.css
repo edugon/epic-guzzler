@@ -26,6 +26,11 @@ h2 span img {
 }
 #sign-in-form {
 	visibility: hidden;
+	font-weight: bold;
+	margin-top: 10px;
+}
+#sing-in-link:link, #sing-in-link:visited {
+	color: #000000;
 }
 #login-form label, #sign-in-form label {
 	text-decoration: underline;
