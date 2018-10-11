@@ -7,6 +7,7 @@ function addListeners() {
 	var signInLink = document.getElementById("sing-in-link");
 	var signButton = document.getElementById("sign-button");
 	var faqButton = document.getElementById("faq-button");
+	var loginForm = document.getElementById("login-form");
 
 	loginButton.addEventListener("click", function() {
 		var userValue = document.getElementById("user-input").value;
@@ -15,7 +16,7 @@ function addListeners() {
 	});
 	signInLink.addEventListener("click", function(e) {
 		document.getElementById("sign-in-form").style.visibility = "visible";
-		signInLink.style.visibility = "hidden";
+		loginForm.style.display = "none";
 		e.preventDefault();
 	});
 	signButton.addEventListener("click", function() {

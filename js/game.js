@@ -165,16 +165,15 @@ function endGame() {
 	var dataBack = JSON.parse(localStorage.getItem("users"));
 	
 	for(let i = 0; i < dataBack.length; i++) 
-		scoreArray.push(dataBack[i].user.score);
+		scoreArray[i] = dataBack[i].user.score;
 	
 	scoreArray.sort(function(a, b){return b-a});
 	for(let i = 0; i < scoreArray.length; i++) {
 		for(let j = 0; j < dataBack.length; j++) {
-			if(scoreArray[i] == dataBack[j].user.score) 
-				text += (i + 1) + ". " + dataBack[j].user.name + ": " + dataBack[j].user.score + " pts<br/>";
+			if(scoreArray[i] === dataBack[j].user.score) 
+				text += (i + 1) + ". " + dataBack[j].user.name + ": " + scoreArray[i] + " pts<br/>";
 		}
 	}
-	console.log(text);
 	var scoreDiv = document.createElement("div");
 	scoreDiv.id = "score-div";
 	scoreDiv.innerHTML = text;
