@@ -9,12 +9,13 @@ h2 {
 h2 span img {
 	width: 25px;
 	height: 25px;
+	border-radius: 50%;
 }
 #container {
 	margin-bottom: 5px;
 }
 #forms-div {
-	/*background-image: url("../img/foodWallpaper.jpg");*/
+	background-image: url("../img/foodWallpaper.jpg");
 	background-color: #ffffff;
 	border: 3px solid #000000;
 	width: 372px;
@@ -38,7 +39,7 @@ h2 span img {
 	margin: 3px;
 }
 #table {
-	border: 3px solid #0066FF;
+	border: 3px solid #000000;
 	background-color: #ffffff;
 	/*background-image: url("../img/foodWallpaper.jpg");*/
 	margin: auto;
@@ -72,8 +73,9 @@ h2 span img {
 	margin-top: 8px;
 }
 .faq-img {
-	width: 20px;
-	height: 20px;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
 }
 .life-img {
 	width: 20px;
@@ -86,11 +88,12 @@ h2 span img {
 	display: none;
 }
 #score-div {
-	/*background-image: url("../img/foodWallpaper.jpg");*/
+	background-image: url("../img/foodWallpaper.jpg");
 	background-color: #ffffff;
 	border: 3px solid #0066FF;
 	width: 372px;
 	height: 372px;
 	text-align: center;
 	font-size: 1.3em;
+	margin: auto;
 }

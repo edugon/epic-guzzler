@@ -2,9 +2,10 @@ var score = 0;
 var lifes = 3;
 
 function initUserScore(userInput) {
-	document.getElementById("user-info").innerHTML = "<b>" + userInput + ":</b> " + score + "pts";
+	document.getElementById("user-info").innerHTML = "<b>" + userInput + ":</b> " + score + " pts";
 	document.getElementById("lifes-div").innerHTML = "";
 	if(lifes <= 0) {
+		console.log("... you lose (" + score + " pts)");
 		alert("YOU LOSE!");
 		updateData(userName, score);
 		endGame();

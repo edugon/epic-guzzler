@@ -49,21 +49,16 @@ function initImage(type) {
 
 function initFaqInfo() {
 	var info = "<b>Left and right arrow</b> to move. <br/><u><b>Food points:</b></u> <br/>"
-	+ "<img class=\"faq-img\" src=\"img/food6.jpg\"></img> +10pts<br/>"
-	+ "<img class=\"faq-img\" src=\"img/food3.jpg\"></img> +10pts<br/>"
-	+ "<img class=\"faq-img\" src=\"img/food5.jpg\"></img> +20pts<br/>"
-	+ "<img class=\"faq-img\" src=\"img/food4.jpg\"></img> +20pts<br/>"
-	+ "<img class=\"faq-img\" src=\"img/food1.jpg\"></img> +30pts<br/>"
-	+ "<img class=\"faq-img\" src=\"img/food2.jpg\"></img> +30pts<br/>"
+	+ "<img class=\"faq-img\" src=\"img/food6.jpg\"></img> +10 pts<br/>"
+	+ "<img class=\"faq-img\" src=\"img/food3.jpg\"></img> +10 pts<br/>"
+	+ "<img class=\"faq-img\" src=\"img/food5.jpg\"></img> +20 pts<br/>"
+	+ "<img class=\"faq-img\" src=\"img/food4.jpg\"></img> +20 pts<br/>"
+	+ "<img class=\"faq-img\" src=\"img/food1.jpg\"></img> +30 pts<br/>"
+	+ "<img class=\"faq-img\" src=\"img/food2.jpg\"></img> +30 pts<br/>"
 	+ "<u><b>Tool Penalty:</u></b><br/>"
-	+ "<img class=\"faq-img\" src=\"img/tool1.jpg\"></img> = <img class=\"faq-img\" src=\"img/death.png\"></img><br/>"
-	+ "<img class=\"faq-img\" src=\"img/tool2.jpg\"></img> ="
-	+ " <img class=\"faq-img\" src=\"img/death.png\"></img>"
-	+ " <img class=\"faq-img\" src=\"img/death.png\"></img><br/>"
-	+ "<img class=\"faq-img\" src=\"img/tool3.jpg\"></img> ="
-	+ " <img class=\"faq-img\" src=\"img/death.png\"></img>"
-	+ " <img class=\"faq-img\" src=\"img/death.png\"></img>"
-	+ " <img class=\"faq-img\" src=\"img/death.png\"></img>";
+	+ "<img class=\"faq-img\" src=\"img/tool1.jpg\"></img> -1 heart(s)<br/>"
+	+ "<img class=\"faq-img\" src=\"img/tool2.jpg\"></img> -2 heart(s)<br/>"
+	+ "<img class=\"faq-img\" src=\"img/tool3.jpg\"></img> -3 heart(s)";
 	document.getElementById("faq-div").innerHTML = info;
 
 	var faqButton = document.getElementById("faq-button");

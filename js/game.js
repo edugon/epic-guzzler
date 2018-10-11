@@ -22,9 +22,9 @@ function generateTable(size) {
 	}
 	document.getElementById("container").appendChild(table);
 }
+
 function initGame(userInput, size) {
-	console.log("Game starts");
-	console.log("--------------------------");
+	console.log("... game starts");
 
 	clearTimeout(levelTimeOut);
 	clearTimeout(moveTimeOut);
@@ -50,6 +50,7 @@ function initGame(userInput, size) {
 	incrementDifficulty();
 	generateItem();
 }
+
 function movePlayer(playerRow, direction) {
 	var playerCell = null;
 	var playerRowCells = playerRow.childNodes;
@@ -78,6 +79,7 @@ function movePlayer(playerRow, direction) {
 		}
 	}
 }
+
 function generateItem() {
 	generateTimeOut = setTimeout(function() {
 		var itemCell = document.getElementById("cell-1-" + Math.floor((Math.random() * 5)));
@@ -95,6 +97,7 @@ function generateItem() {
 		generateItem();
 	}, 500);
 }
+
 function moveItem(item) {
 	var end = false;
 	var rows = document.getElementsByTagName("tr");
@@ -133,19 +136,18 @@ function moveItem(item) {
 			}
 	}, 400);
 }
+
 function incrementDifficulty() {
 	levelTimeOut = setTimeout(function() {
 		if(level > 2) {
-			console.log("Item generation:");
-			console.log("Food: " + level + "0%");
-			console.log("Tool: " + (8 - level) + "0%");
-			console.log("Life: 20%");
-			console.log("--------------------------");
+			console.log("food: " + level + "0% | " + 
+				"tools: " + (8 - level) + "0% | hearts: 20%");
 			level--;
 			incrementDifficulty();
 		}
 	}, 6000);
 }
+
 function resetGame() {
 	score = 0;
 	resetLifes();
@@ -153,6 +155,7 @@ function resetGame() {
 	document.getElementById("restart-button").style.display = "none";
 	initGame(userName, 7);
 }
+
 function endGame() {
 	clearTimeout(levelTimeOut);
 	clearTimeout(moveTimeOut);
@@ -160,15 +163,18 @@ function endGame() {
 	var text = "<br/><b><u>Top score: </u></b><br/>";
 	var scoreArray = [];
 	var dataBack = JSON.parse(localStorage.getItem("users"));
-	for(var i = 0; i < dataBack.length; i++) 
+	
+	for(let i = 0; i < dataBack.length; i++) 
 		scoreArray.push(dataBack[i].user.score);
+	
 	scoreArray.sort(function(a, b){return b-a});
-	for(var i = 0; i < scoreArray.length; i++) {
-		for(var j = 0; j < dataBack.length; j++) {
+	for(let i = 0; i < scoreArray.length; i++) {
+		for(let j = 0; j < dataBack.length; j++) {
 			if(scoreArray[i] == dataBack[j].user.score) 
-				text += (i + 1) + ". " + dataBack[j].user.name + ": " + dataBack[j].user.score + "pts<br/>";
+				text += (i + 1) + ". " + dataBack[j].user.name + ": " + dataBack[j].user.score + " pts<br/>";
 		}
 	}
+	console.log(text);
 	var scoreDiv = document.createElement("div");
 	scoreDiv.id = "score-div";
 	scoreDiv.innerHTML = text;
