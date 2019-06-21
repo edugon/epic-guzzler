@@ -1,6 +1,5 @@
 # Epic Guzzler
-
-![](https://gitlab.com/EduGon/epic-guzzler/raw/master/img/screens.PNG)
+> This is a migrated repository, the currently maintained version is located [here](https://gitlab.com/edugon/docker-utilities).
 
 ## Description
 - Use keyboard (left and right arrows) to move.
