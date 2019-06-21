@@ -1,6 +1,8 @@
 # Epic Guzzler
 > This is a migrated repository, the currently maintained version is located [here](https://gitlab.com/edugon/epic-guzzler).
 
+![screens](https://user-images.githubusercontent.com/4357846/59934995-b52fb380-9444-11e9-9777-93a059683463.png)
+
 ## Description
 - Use keyboard (left and right arrows) to move.
 - Eat food to increase score.
