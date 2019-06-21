@@ -13,4 +13,5 @@
 > **Check** in-game **FAQ** for more info.
 
 ## Run the game
-Just execute `index.html` to run the game.
+- https://edugon.gitlab.io/epic-guzzler
+- Just execute `index.html` to run the game.
