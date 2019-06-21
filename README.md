@@ -1,5 +1,5 @@
 # Epic Guzzler
-> This is a migrated repository, the currently maintained version is located [here](https://gitlab.com/edugon/docker-utilities).
+> This is a migrated repository, the currently maintained version is located [here](https://gitlab.com/edugon/epic-guzzler).
 
 ## Description
 - Use keyboard (left and right arrows) to move.
